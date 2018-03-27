@@ -1,0 +1,1 @@
+﻿svcutil.exe /serializer:xmlserializer http://localhost/WCFTemplate.Host/ServiceTemplate.svc?singleWsdl /l:C# /o:ProxyTemplate.cs /config:ProxyTemplateApp.config /n:*,WCFTemplate.Client

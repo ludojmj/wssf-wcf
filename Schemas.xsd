@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema targetNamespace="http://schemas.wcftemplate.jmj/wcf/template/1"
+            version="1.0.0"
+            xmlns:data="http://schemas.wcftemplate.jmj/wcf/template/1"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ***************** DATA ***************** -->
+
+  <!-- ***************** INPUT ***************** -->
+  <xsd:complexType name="OperationIn">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="Input" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <!-- ***************** OUTPUT ***************** -->
+  <xsd:complexType name="OperationOut">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="Output" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <!-- ***************** FAULTS ***************** -->
+  <!-- Cf. DataContract -->
+</xsd:schema>

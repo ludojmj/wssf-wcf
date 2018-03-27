@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataContractDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AF">
+  <dataContractModelMoniker Id="ae421e23-96e7-4fa9-ae6a-957d63823aa3" />
+  <nestedChildShapes>
+    <faultContractCompartmentShape Id="6180ed92-f62b-4775-a75f-0877213d85f6" absoluteBounds="0.5, 1.625, 2, 0.88180582682291675">
+      <faultContractMoniker Id="b5841adb-2317-45b3-88cb-97502de69d56" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f7b07b98-fef8-4581-9194-e408451c50cd" absoluteBounds="0.51499999999999968, 2.035, 1.9700000000000002, 0.37180582682291663" name="FaultMembersCompartment" titleTextColor="Black" itemTextColor="IndianRed" />
+      </nestedChildShapes>
+    </faultContractCompartmentShape>
+    <faultContractCompartmentShape Id="6821d8ec-2204-4c22-8989-6b2327ec37a4" absoluteBounds="0.5, 0.5, 2, 0.88180582682291675">
+      <faultContractMoniker Id="8aaf2971-8dd8-497c-bda3-e1c41fe254bb" />
+      <nestedChildShapes>
+        <elementListCompartment Id="02be83b4-b26a-43e4-a611-be6a99e143ed" absoluteBounds="0.51499999999999968, 0.91000000000000014, 1.9700000000000002, 0.37180582682291663" name="FaultMembersCompartment" titleTextColor="Black" itemTextColor="IndianRed" />
+      </nestedChildShapes>
+    </faultContractCompartmentShape>
+  </nestedChildShapes>
+</dataContractDiagram>

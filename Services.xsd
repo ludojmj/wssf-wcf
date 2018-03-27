@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://services.wcftemplate.jmj/wcf/template/1"
+            version="1.0.0"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:data="http://schemas.wcftemplate.jmj/wcf/template/1"
+            xmlns:srv="http://services.wcftemplate.jmj/wcf/template/1">
+
+  <!-- Import XSD Data -->
+  <xsd:import namespace="http://schemas.wcftemplate.jmj/wcf/template/1" schemaLocation="Schemas.xsd" />
+
+  <!-- ***************** RESQUESTS ***************** -->
+  <xsd:element name="OperationRequest" type="data:OperationIn" />
+
+ 
+  <!-- ***************** RESPONSES ***************** -->
+  <xsd:element name="OperationResponse" type="data:OperationOut" />
+
+  <!-- ***************** FAULTS ***************** -->
+  <!-- Cf. DataContract -->
+
+</xsd:schema>

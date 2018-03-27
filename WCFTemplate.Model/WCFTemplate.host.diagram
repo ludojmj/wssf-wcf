@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hostDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AF">
+  <hostDesignerModelMoniker Id="7171c7ad-6a90-40b7-9599-53f129307173" />
+  <nestedChildShapes>
+    <hostApplicationShape Id="8563fae9-ca37-4198-a643-891e9f60b3ea" absoluteBounds="0.5, 0.625, 1.5, 0.375">
+      <hostApplicationMoniker name="/7171c7ad-6a90-40b7-9599-53f129307173/HostApplicationTemplate" />
+    </hostApplicationShape>
+    <cilentApplicationShape Id="b6094369-8737-4557-bc2a-944aa8a8fda6" absoluteBounds="5.25, 0.625, 1.625, 0.375">
+      <clientApplicationMoniker name="/7171c7ad-6a90-40b7-9599-53f129307173/ClientTemplate" />
+      <relativeChildShapes>
+        <proxyPortShape Id="76c84a65-a246-4d7f-a728-2a206f37d7e3" absoluteBounds="5.9375, 0.875, 0.25, 0.25">
+          <proxyMoniker Id="9e5311c6-fccb-45aa-a40c-54dc3cdafdbb" />
+        </proxyPortShape>
+      </relativeChildShapes>
+    </cilentApplicationShape>
+    <serviceDescriptionShape Id="f90f5355-0b71-4b4a-a0a9-23b24178c96f" absoluteBounds="2.875, 0.625, 1.5, 0.375">
+      <serviceReferenceMoniker name="/7171c7ad-6a90-40b7-9599-53f129307173/HostApplicationTemplate/ServiceTemplate" />
+      <relativeChildShapes>
+        <endpointPortShape Id="a599d0b8-3dc6-4e49-aa87-1a5d708fc598" absoluteBounds="3.5, 0.875, 0.25, 0.25">
+          <endpointMoniker Id="c64f9f74-eace-4ab1-8154-dfcbc4eb3209" />
+        </endpointPortShape>
+      </relativeChildShapes>
+    </serviceDescriptionShape>
+    <serviceConnector edgePoints="[(2 : 0.8125); (2.875 : 0.8125)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="fcb7dde6-61aa-4b26-832a-bd9c8244de30">
+      <nodes>
+        <hostApplicationShapeMoniker Id="8563fae9-ca37-4198-a643-891e9f60b3ea" />
+        <serviceDescriptionShapeMoniker Id="f90f5355-0b71-4b4a-a0a9-23b24178c96f" />
+      </nodes>
+    </serviceConnector>
+    <proxyEndpointConnector edgePoints="[(6.0625 : 1.125); (6.0625 : 1.5); (3.625 : 1.5); (3.625 : 1.125)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="8fff9ca0-4f72-4067-ae83-45b028e27931">
+      <nodes>
+        <proxyPortShapeMoniker Id="76c84a65-a246-4d7f-a728-2a206f37d7e3" />
+        <endpointPortShapeMoniker Id="a599d0b8-3dc6-4e49-aa87-1a5d708fc598" />
+      </nodes>
+    </proxyEndpointConnector>
+  </nestedChildShapes>
+</hostDesignerDiagram>

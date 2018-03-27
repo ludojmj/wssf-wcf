@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<ProjectMappingInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" FileName="ProjectMapping.xml" xmlns="http://schemas.microsoft.com/pag/project-mapping">
+  <ProjectMappingTables>
+    <ProjectMappingTable Name="Source{F569F60D-72CB-434C-BA88-2C270C85176B}">
+      <ProjectMappings>
+        <ProjectMapping ProjectId="11dc9d3b-a6a2-4f10-ac97-4e043da0ffc5" ProjectPath="\GeneratedCode" ProjectName="WCFTemplate.Tools">
+          <Roles>
+            <Role Name="ToolsRole" />
+          </Roles>
+        </ProjectMapping>
+
+        <ProjectMapping ProjectId="da5c82fc-21de-49a3-a3f0-235d360b5bd6" ProjectPath="\GeneratedCode" ProjectName="WCFTemplate.BusinessEntities">
+          <Roles>
+            <Role Name="BusinessEntityRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="fe182ef5-28d7-43b6-89a5-a9b98cc1349d" ProjectPath="\GeneratedCode" ProjectName="WCFTemplate.BusinessLogic">
+          <Roles>
+            <Role Name="BusinessLogicRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="05e3fc99-a063-4d22-a125-bf3fd3b72f7c" ProjectPath="\GeneratedCode" ProjectName="WCFTemplate.DataAccess">
+          <Roles />
+        </ProjectMapping>
+        <ProjectMapping ProjectId="b0612c4f-16f6-4aa0-9876-6d04177814aa" ProjectPath="\GeneratedCode" ProjectName="WCFTemplate.DataContracts">
+          <Roles>
+            <Role Name="DataContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="d5733432-1a28-4876-a7d6-0d6df61614c8" ProjectPath="\GeneratedCode" ProjectName="WCFTemplate.FaultContracts">
+          <Roles>
+            <Role Name="FaultContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="32213104-98be-4deb-b27e-737163d53b07" ProjectPath="\GeneratedCode" ProjectName="WCFTemplate.MessageContracts">
+          <Roles>
+            <Role Name="MessageContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="897f3524-df67-4cc4-97c3-2fcac2a21156" ProjectPath="\GeneratedCode" ProjectName="WCFTemplate.ServiceImplementation">
+          <Roles>
+            <Role Name="ServiceRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="7d45a99b-585d-4ea9-b7df-c766c62b8bb7" ProjectPath="\GeneratedCode" ProjectName="WCFTemplate.ServiceContracts">
+          <Roles>
+            <Role Name="ServiceContractRole" />
+          </Roles>
+        </ProjectMapping>
+      </ProjectMappings>
+    </ProjectMappingTable>
+    <ProjectMappingTable Name="Tests{0F558666-E3B9-454E-B323-922C631574C4}">
+      <ProjectMappings>
+        <ProjectMapping ProjectId="278140be-ae5f-4488-b25a-83ab12721343" ProjectPath="\GeneratedCode" ProjectName="WCFTemplate.Client">
+          <Roles>
+            <Role Name="ClientRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="9daaef5c-438c-42dd-a5d9-b42112e0d0a5" ProjectPath="\GeneratedCode" ProjectName="WCFTemplate.Host">
+          <Roles>
+            <Role Name="HostRole" />
+          </Roles>
+        </ProjectMapping>
+      </ProjectMappings>
+    </ProjectMappingTable>
+  </ProjectMappingTables>
+</ProjectMappingInformation>

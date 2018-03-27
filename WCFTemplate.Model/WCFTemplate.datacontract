@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataContractModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ae421e23-96e7-4fa9-ae6a-957d63823aa3" implementationTechnology="{b327a38e-00f0-4967-838b-8e8fcc93db30}|WCF|WCF Extension" projectMappingTable="Source{F569F60D-72CB-434C-BA88-2C270C85176B}" namespace="http://schemas.wcftemplate.jmj/wcf/template/1" xmlns="http://schemas.microsoft.com/dsltools/DataContractDsl">
+  <contracts>
+    <faultContract Id="b5841adb-2317-45b3-88cb-97502de69d56" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFFaultContract&quot; /&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="TechnicalError" namespace="http://schemas.wcftemplate.jmj/wcf/template/1">
+      <dataMembers>
+        <primitiveDataType Id="9e3b3e3e-a115-4486-9429-dadeafe9605d" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFDataElement&quot;&gt;&#xD;&#xA;    &lt;IsRequired&gt;false&lt;/IsRequired&gt;&#xD;&#xA;    &lt;Order&gt;1&lt;/Order&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="Message" collectionType="" isNullable="false" />
+      </dataMembers>
+    </faultContract>
+    <faultContract Id="8aaf2971-8dd8-497c-bda3-e1c41fe254bb" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFFaultContract&quot; /&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="BusinessError" namespace="http://schemas.wcftemplate.jmj/wcf/template/1">
+      <dataMembers>
+        <primitiveDataType Id="722f76b2-21a2-49c4-8b15-d0b8f52e1dc4" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFDataElement&quot;&gt;&#xD;&#xA;    &lt;IsRequired&gt;false&lt;/IsRequired&gt;&#xD;&#xA;    &lt;Order&gt;0&lt;/Order&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="Message" collectionType="" isNullable="false" />
+      </dataMembers>
+    </faultContract>
+  </contracts>
+</dataContractModel>

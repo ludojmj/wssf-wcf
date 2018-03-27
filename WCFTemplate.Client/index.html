@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Test WcfTemplate</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <h1>Test Api -> WcfTemplate</h1>
+    <p id="results">...</p>
+    <button class="btn" id="action0" data-url="api/operation?xxx">Test regular operation</button>
+    <br />
+    <button class="btn" id="action1" data-url="api/apiError?techErr=true">Test technical error in Api</button>
+    <button class="btn" id="action2" data-url="api/apiError?techErr=false">Test business error in Api</button>
+    <br />
+    <button class="btn" id="action4" data-url="api/WsTechnicalError?xxx">Test technical error in WS SOAP</button>
+    <button class="btn" id="action3" data-url="api/WsBusinessError?xxx">Test business error in WS SOAP</button>
+
+    <script src="index.js" async></script>
+</body>
+</html>

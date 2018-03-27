@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{897F3524-DF67-4CC4-97C3-2FCAC2A21156}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WCFTemplate.ServiceImplementation</RootNamespace>
+    <AssemblyName>WCFTemplate.ServiceImplementation</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Core">
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GeneratedCode\ServiceTemplate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceTemplate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WCFTemplate.Tools\WCFTemplate.Tools.csproj">
+      <Project>{6f7231bf-2f0a-4b6b-b31d-21703759dd4b}</Project>
+      <Name>WCFTemplate.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WCFTemplate.DataAccess\WCFTemplate.DataAccess.csproj">
+      <Project>{05e3fc99-a063-4d22-a125-bf3fd3b72f7c}</Project>
+      <Name>WCFTemplate.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WCFTemplate.DataContracts\WCFTemplate.DataContracts.csproj">
+      <Project>{B0612C4F-16F6-4AA0-9876-6D04177814AA}</Project>
+      <Name>WCFTemplate.DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WCFTemplate.FaultContracts\WCFTemplate.FaultContracts.csproj">
+      <Project>{D5733432-1A28-4876-A7D6-0D6DF61614C8}</Project>
+      <Name>WCFTemplate.FaultContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WCFTemplate.MessageContracts\WCFTemplate.MessageContracts.csproj">
+      <Project>{32213104-98be-4deb-b27e-737163d53b07}</Project>
+      <Name>WCFTemplate.MessageContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WCFTemplate.ServiceContracts\WCFTemplate.ServiceContracts.csproj">
+      <Project>{7D45A99B-585D-4EA9-B7DF-C766C62B8BB7}</Project>
+      <Name>WCFTemplate.ServiceContracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Roles="ServiceRole" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
