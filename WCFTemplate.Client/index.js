@@ -17,6 +17,7 @@
         oReq.open("GET", e.target.dataset.url + bustCache, true);
         oReq.setRequestHeader("X-Requested-With", "XMLHttpRequest");
         oReq.setRequestHeader("x-vanillaAjaxWithoutjQuery-version", "1.0");
+        oReq.setRequestHeader("X-EndUser", "EndUserTest");
         oReq.send();
     });
 }

@@ -35,6 +35,9 @@ namespace WCFTemplate.Client
             config.Services.Replace(typeof(IExceptionHandler), new GlobalExceptionHandler());
             config.Services.Replace(typeof(IExceptionLogger), new GlobalExceptionLogger());
 
+            // Properties integrity handling
+            config.Filters.Add(new ValidateModelAttribute());
+
             // Web API routes
             config.MapHttpAttributeRoutes();
 

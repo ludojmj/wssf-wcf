@@ -3,9 +3,12 @@ using WCFTemplate.DataContracts;
 using WCFTemplate.MessageContracts;
 using WCFTemplate.Tools;
 using WCFTemplate.Tools.Errors;
+using WCFTemplate.Tools.Traces;
 
 namespace WCFTemplate.ServiceImplementation
 {
+    [TraceHandler]
+    [ExceptionHandler]
     public partial class ServiceTemplate
     {
         [ServicePermission(SecurityAction.Demand)]

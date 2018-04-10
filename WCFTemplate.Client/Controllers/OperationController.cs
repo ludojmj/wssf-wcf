@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Linq;
 using System.ServiceModel;
+using System.ServiceModel.Web;
 using System.Web.Http;
 using WCFTemplate.Client.Shared;
 
@@ -28,8 +30,17 @@ namespace WCFTemplate.Client.Controllers
 
                 try
                 {
-                    var resp = proxy.Operation(req.OperationIn);
-                    return Ok(resp.Output);
+                    using (new OperationContextScope(proxy.InnerChannel))
+                    {
+                        if (WebOperationContext.Current != null)
+                        {   // Tell the WS about the end user identity
+                            var headerValues = Request.Headers.GetValues("X-EndUser");
+                            var endUser = headerValues.FirstOrDefault();
+                            WebOperationContext.Current.OutgoingRequest.Headers.Add("END_USER", endUser);
+                        }
+                        var resp = proxy.Operation(req.OperationIn);
+                        return Ok(resp.Output);
+                    }
                 }
                 catch (TimeoutException error)
                 {

@@ -5,6 +5,9 @@ namespace WCFTemplate.Tools
 {
     public static class Utils
     {
+        public static readonly bool DisableTelemetry = bool.Parse(ConfigurationManager.AppSettings["applicationInsights:DisableTelemetry"]);
+        public static readonly string InstrumentationKey = ConfigurationManager.AppSettings["applicationInsights:InstrumentationKeyString"];
+
         public static readonly string AuthorizedGroup = ConfigurationManager.AppSettings["AuthorizedGroup"];
         public static bool IsDebug
         {
