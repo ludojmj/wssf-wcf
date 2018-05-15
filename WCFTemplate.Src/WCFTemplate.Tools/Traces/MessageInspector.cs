@@ -16,7 +16,7 @@ namespace WCFTemplate.Tools.Traces
         private readonly TelemetryClient _telemetry = new TelemetryClient();
 
         // Request
-        object IDispatchMessageInspector.AfterReceiveRequest(ref Message request, IClientChannel channel, InstanceContext instanceContext)
+        public object AfterReceiveRequest(ref Message request, IClientChannel channel, InstanceContext instanceContext)
         {
             string url = request.Headers.To == null ? string.Empty : request.Headers.To.AbsoluteUri;
             string operation = request.Headers.Action == null ? null : request.Headers.Action.Substring(request.Headers.Action.LastIndexOf("/", StringComparison.Ordinal) + 1);
@@ -41,6 +41,11 @@ namespace WCFTemplate.Tools.Traces
         // Response
         public void BeforeSendReply(ref Message reply, object correlationState)
         {
+            if (correlationState == null)
+            {
+                return;
+            }
+
             var requestInfo = (CorrelReqResp)correlationState;
             requestInfo.Chrono.Stop();
             
